@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#FF7800"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#FF7800"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1,2,3,4">
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/mesResultados"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="5dp"
+                            android:ems="6"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Mes"
+                            android:textColor="@color/purple_500" />
+
+                        <TextView
+                            android:id="@+id/estadoResultados"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="5dp"
+                            android:ems="6"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Estado actividad"
+                            android:textColor="@color/purple_500" />
+                        <TextView
+                            android:layout_height="match_parent"
+                            android:textColor="@color/purple_500"
+                            android:padding="5dp"
+                            android:id="@+id/cantidadEstados"
+                            android:text="Cantidad"
+                            android:ems="6"
+                            android:gravity="center"
+                            android:layout_marginRight="5dp"/>
+                    </TableRow>
+                </TableLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1,2,3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardView2">
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/mesResultadosView1"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:ems="6"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="@color/purple_500" />
+
+                    <TextView
+                        android:id="@+id/estadoResultadosView1"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:ems="6"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Estado actividad"
+                        android:textColor="@color/purple_500" />
+
+                    <TextView
+                        android:id="@+id/cantidadEstadosView1"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:ems="6"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Cantidad"
+                        android:textColor="@color/purple_500" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/mesResultadosView2"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:ems="6"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="@color/purple_500" />
+
+                    <TextView
+                        android:id="@+id/estadoResultadosView2"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:ems="6"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Estado actividad"
+                        android:textColor="@color/purple_500" />
+
+                    <TextView
+                        android:id="@+id/cantidadEstadosView2"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:ems="6"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Cantidad"
+                        android:textColor="@color/purple_500" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/mesResultadosView3"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:ems="6"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="@color/purple_500" />
+
+                    <TextView
+                        android:id="@+id/estadoResultadosView3"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:ems="6"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Estado actividad"
+                        android:textColor="@color/purple_500" />
+
+                    <TextView
+                        android:id="@+id/cantidadEstadosView3"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:ems="6"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Cantidad"
+                        android:textColor="@color/purple_500" />
+                </TableRow>
+
+            </TableLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

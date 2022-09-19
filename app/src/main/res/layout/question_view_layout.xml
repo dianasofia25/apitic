@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/noteCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:contentPadding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#D6D9F1"
+                app:cardElevation="5dp"
+                app:contentPadding="7dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/settingsIconQ"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_more_vert_24" />
+
+                    <TextView
+                        android:id="@+id/tituloP"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Pregunta mamolona"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/purple_500"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/settingsIconQ"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/contenidoP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="5dp"
+                android:text="Contenido pregunta mamalona"
+                android:textAlignment="viewStart"
+                android:textColor="@color/purple_500"
+                android:textSize="15sp"
+                android:textStyle="normal|italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardView"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/categoriaP"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:ems="8"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                app:drawableStartCompat="@drawable/ic_category_24"
+                android:text="Categoria"
+                android:textSize="15sp"
+                android:textColor="@color/purple_500"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/contenidoP"
+                app:layout_constraintVertical_bias="0.0"/>
+
+            <TextView
+                android:id="@+id/tiempoQ"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:ems="8"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                app:drawableStartCompat="@drawable/ic_publish_24"
+                android:text="Time post"
+                android:textSize="12sp"
+                android:textColor="@color/purple_500"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/categoriaP"
+                app:layout_constraintVertical_bias="0.0"/>
+
+<!--            <TableLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:padding="5dp"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/contenidoP"-->
+<!--                app:layout_constraintVertical_bias="0.0"-->
+<!--                android:stretchColumns="1,2">-->
+
+<!--                <TableRow>-->
+<!--                    <TextView-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:id="@+id/tiempoQ"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_marginStart="12dp"-->
+<!--                        android:ems="8"-->
+<!--                        android:gravity="center"-->
+<!--                        app:drawableStartCompat="@drawable/ic_reply_24"-->
+<!--                        android:text="Time post"-->
+<!--                        android:textSize="12sp"-->
+<!--                        android:textColor="@color/purple_500" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/cantRespuestas"-->
+<!--                        -->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_marginStart="5dp"-->
+<!--                        android:layout_marginEnd="12dp"-->
+<!--                        android:ems="8"-->
+<!--                        android:gravity="center"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        app:drawableStartCompat="@drawable/ic_chat__24"-->
+<!--                        android:text="Answers"-->
+<!--                        android:textSize="12sp"-->
+<!--                        android:textColor="@color/purple_500" />-->
+<!--                </TableRow>-->
+<!--            </TableLayout>-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

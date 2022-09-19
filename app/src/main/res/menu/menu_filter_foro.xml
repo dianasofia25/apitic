@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_filterForo"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_filter_alt_24"
+        app:showAsAction="always"
+        android:title="Filtrar">
+
+        <menu>
+            <item android:id="@+id/action_confiAntena"
+                android:orderInCategory="100"
+                android:icon="@drawable/ic_filter_list_24_az"
+                android:title="Configuración antena satelital"/>
+
+            <item android:id="@+id/action_confiAP"
+                android:orderInCategory="100"
+                android:icon="@drawable/ic_filter_list_24_az"
+                android:title="Configuración access point"/>
+
+            <item android:id="@+id/action_confiRadio"
+                android:orderInCategory="100"
+                android:icon="@drawable/ic_filter_list_24_az"
+                android:title="Configuración radio"/>
+
+            <item android:id="@+id/action_confiMK"
+                android:orderInCategory="100"
+                android:icon="@drawable/ic_filter_list_24_az"
+                android:title="Configuración router"/>
+
+            <item android:id="@+id/action_confiUPS"
+                android:orderInCategory="100"
+                android:icon="@drawable/ic_filter_list_24_az"
+                android:title="Configuracion UPS"/>
+
+            <item android:id="@+id/action_confiOtro"
+                android:orderInCategory="100"
+                android:icon="@drawable/ic_filter_list_24_az"
+                android:title="Otros"/>
+
+        </menu>
+
+    </item>
+
+</menu>

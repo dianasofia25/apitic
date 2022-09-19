@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swipeRefreshLayoutInicio">
+
+  <androidx.core.widget.NestedScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@drawable/bars"
+      android:id="@+id/home"
+      tools:context=".ui.inicio.Inicio">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/home2"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <LinearLayout
+          android:id="@+id/linearlayout"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:text="@string/bienvenido"
+            android:textAlignment="center"
+            android:textColor="#FFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:flow_horizontalAlign="center"
+            app:flow_verticalAlign="center" />
+
+        <TextView
+            android:id="@+id/welcome_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#FFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:autoSizeMaxTextSize="20sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView2"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center"
+            android:padding="2dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ingh"
+            android:clickable="true"
+            app:civ_border_color="#FFFF"
+            app:civ_border_width="5dp"
+            app:civ_circle_background_color="#1a27ab"
+            android:focusable="true" />
+      </LinearLayout>
+
+
+      <Button
+          android:id="@+id/logout"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="55dp"
+          android:layout_marginBottom="55dp"
+          android:background="@drawable/round_corner_blue"
+          android:text="@string/cerrar_sesi_n"
+          app:cornerRadius="100sp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/TelephoneNumberE" />
+
+      <EditText
+          android:id="@+id/UsernameE"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+          android:layout_marginEnd="10dp"
+          android:layout_marginStart="10dp"
+          android:capitalize="words"
+          android:hint="@string/ingrese_su_nombre_completo"
+          android:longClickable="false"
+          android:padding="10sp"
+          android:textAlignment="textStart"
+          android:textColor="#222552"
+          android:textSize="18sp"
+          android:visibility="invisible"
+          app:drawableEndCompat="@drawable/done_24"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/linearlayout"
+          app:layout_constraintVertical_bias="0"/>
+
+      <TextView
+          android:id="@+id/Username"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/white"
+          android:longClickable="false"
+          android:padding="10sp"
+          android:layout_marginTop="20dp"
+          android:layout_marginEnd="10dp"
+          android:layout_marginStart="10dp"
+          android:text="@string/tu_nombre"
+          android:textAlignment="textStart"
+          android:textColor="#222552"
+          android:textSize="18sp"
+          android:visibility="visible"
+          app:drawableEndCompat="@drawable/edit_24"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/linearlayout"
+          app:layout_constraintVertical_bias="0"/>
+
+      <TextView
+          android:id="@+id/iEmail"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/white"
+          android:padding="10sp"
+          android:layout_marginTop="13dp"
+          android:layout_marginEnd="10dp"
+          android:layout_marginStart="10dp"
+          android:text="@string/tu_correo"
+          android:textAlignment="textStart"
+          android:textColor="#222552"
+          android:textSize="18sp"
+          app:drawableEndCompat="@drawable/edit_24"
+          android:longClickable="false"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/Username"
+          app:layout_constraintVertical_bias="0" />
+
+      <TextView
+          android:id="@+id/hBirthdate"
+          android:background="@drawable/white"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="10sp"
+          android:layout_marginTop="13dp"
+          android:layout_marginEnd="10dp"
+          android:layout_marginStart="10dp"
+          android:text="@string/tu_fecha_de_nacimiento"
+          android:textAlignment="textStart"
+          android:textColor="#222552"
+          android:textSize="18sp"
+          app:drawableEndCompat="@drawable/edit_24"
+          android:longClickable="false"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/iEmail"
+          app:layout_constraintVertical_bias="0" />
+
+
+      <EditText
+          android:id="@+id/hBirthdateE"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="10sp"
+          android:layout_marginTop="13dp"
+          android:layout_marginEnd="10dp"
+          android:layout_marginStart="10dp"
+          android:longClickable="false"
+          android:hint="@string/ingrese_su_fecha_de_nacimiento"
+          android:textAlignment="textStart"
+          android:inputType="date"
+          android:textColor="#222552"
+          android:focusable="false"
+          android:clickable="true"
+          android:textSize="18sp"
+          android:visibility="invisible"
+          app:drawableEndCompat="@drawable/done_24"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/iEmail"
+          app:layout_constraintVertical_bias="0" />
+
+      <TextView
+          android:id="@+id/TelephoneNumber"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/white"
+          android:padding="10sp"
+          android:layout_marginTop="13dp"
+          android:layout_marginEnd="10dp"
+          android:layout_marginStart="10dp"
+          android:longClickable="false"
+          android:text="@string/tu_n_mero_telef_nico"
+          android:textAlignment="textStart"
+          android:textColor="#222552"
+          android:textSize="18sp"
+          app:drawableEndCompat="@drawable/edit_24"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/hBirthdate"
+          app:layout_constraintVertical_bias="0" />
+
+      <EditText
+          android:id="@+id/TelephoneNumberE"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="10sp"
+          android:layout_marginTop="13dp"
+          android:layout_marginEnd="10dp"
+          android:layout_marginStart="10dp"
+          android:longClickable="false"
+          android:hint="@string/ingrese_su_numero_telefonico"
+          android:textAlignment="textStart"
+          android:textColor="#222552"
+          android:textSize="18sp"
+          android:visibility="invisible"
+          app:drawableEndCompat="@drawable/done_24"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/hBirthdate"
+          app:layout_constraintVertical_bias="0" />
+
+      <!--  <HorizontalScrollView-->
+      <!--      android:id="@+id/horizontalScrollView"-->
+      <!--      android:layout_width="match_parent"-->
+      <!--      android:layout_height="wrap_content"-->
+      <!--      android:layout_marginTop="85dp"-->
+      <!--      app:layout_constraintEnd_toEndOf="parent"-->
+      <!--      app:layout_constraintHorizontal_bias="0.0"-->
+      <!--      app:layout_constraintStart_toStartOf="parent"-->
+      <!--      app:layout_constraintTop_toBottomOf="@+id/logout"-->
+      <!--      tools:ignore="SpeakableTextPresentCheck">-->
+
+      <!--    <LinearLayout-->
+      <!--        android:id="@+id/LY"-->
+      <!--        android:layout_width="wrap_content"-->
+      <!--        android:layout_height="wrap_content"-->
+      <!--        android:orientation="horizontal">-->
+
+      <!--      <ImageView-->
+      <!--          android:id="@+id/ISO"-->
+      <!--          android:layout_width="110dp"-->
+      <!--          android:layout_height="match_parent"-->
+      <!--          android:paddingLeft="5dp"-->
+      <!--          android:paddingTop="5dp"-->
+      <!--          android:paddingRight="5dp"-->
+      <!--          android:paddingBottom="5dp"-->
+      <!--          android:src="@drawable/logo_de_certificacion_20201"-->
+      <!--          tools:ignore="ImageContrastCheck"-->
+      <!--          tools:layout_editor_absoluteX="2dp"-->
+      <!--          tools:layout_editor_absoluteY="463dp" />-->
+
+      <!--      <TextView-->
+      <!--          android:id="@+id/ingelec"-->
+      <!--          android:layout_width="wrap_content"-->
+      <!--          android:layout_height="match_parent"-->
+      <!--          android:paddingLeft="5dp"-->
+      <!--          android:paddingTop="5dp"-->
+      <!--          android:paddingRight="5dp"-->
+      <!--          android:paddingBottom="5dp"-->
+      <!--          android:textAlignment="center"-->
+      <!--          android:textColor="#FFFFFFFF"-->
+      <!--          android:textSize="10sp"-->
+      <!--          tools:ignore="SmallSp" />-->
+
+      <!--      <ImageView-->
+      <!--          android:id="@+id/ingelec2"-->
+      <!--          android:layout_width="90dp"-->
+      <!--          android:layout_height="wrap_content"-->
+      <!--          android:src="@drawable/logo"-->
+      <!--          tools:ignore="ImageContrastCheck"-->
+      <!--          tools:layout_editor_absoluteX="2dp"-->
+      <!--          tools:layout_editor_absoluteY="463dp" />-->
+      <!--    </LinearLayout>-->
+      <!--  </HorizontalScrollView>-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+  </androidx.core.widget.NestedScrollView>
+
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

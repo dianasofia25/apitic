@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.cronograma.editCrono">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarEditCrono"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:popupTheme="@style/Theme.APITIC.PopupOverlay">
+
+        <EditText
+            android:id="@+id/editCronoTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Actividad"
+            android:layout_marginEnd="30dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarEditCrono"
+        app:layout_constraintVertical_bias="0">
+
+        <LinearLayout
+            android:id="@+id/Linearlayoutedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp">
+
+            <EditText
+                android:id="@+id/editIdCrono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:autofillHints=""
+                android:background="@drawable/white"
+                android:ems="10"
+                android:hint="ID beneficiario"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:padding="10sp"
+                android:textColor="#222552"
+                android:textSize="16sp"
+                app:drawableEndCompat="@drawable/edit_24" />
+
+
+            <TextView
+                android:id="@+id/editICrono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/white"
+                android:longClickable="false"
+                android:padding="10sp"
+                android:hint="@string/fecha_actividad"
+                android:textAlignment="textStart"
+                android:textColor="#222552"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/editFCrono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white"
+                android:hint="Hora terminacion actividad"
+                android:padding="10sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:textColor="#222552"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/editSCrono_spinner"
+                style="@style/SpinnerTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/arrow_down"
+                android:minHeight="48dp"
+                android:popupBackground="@drawable/white"
+                android:spinnerMode="dropdown" />
+
+            <EditText
+                android:id="@+id/editNoteCrono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:autofillHints=""
+                android:background="@drawable/white"
+                android:ems="10"
+                android:hint="Nota actividad"
+                android:inputType="textMultiLine"
+                android:minHeight="48dp"
+                android:padding="10sp"
+                android:textColor="#222552"
+                android:textSize="16sp"
+                app:drawableEndCompat="@drawable/edit_24" />
+
+            <ProgressBar
+                android:id="@+id/progressBarEditCrono"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="60dp"
+                android:layout_gravity="center"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/editFloatB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_gravity="bottom|end"
+        app:maxImageSize="30dp"
+        app:srcCompat="@drawable/ic_check_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
