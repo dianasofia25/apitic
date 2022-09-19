@@ -1,2 +1,0 @@
-com/example/apitic/ExampleUnitTest.java
- com.example.apitic.ExampleUnitTest
