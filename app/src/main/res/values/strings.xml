@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">APITIC</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Menú</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_download">Descargar</string>
+    <string name="action_downloadAPK">Descargar APK Hughesnet</string>
+
+    <string name="menu_home" size="22sp">Inicio</string>
+    <string name="menu_instruc">Instructivos</string>
+    <string name="menu_insta">Cronograma</string>
+    <string name="menu_info">Información</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+    </string>
+    <string name="ya_te_registraste_inicia_sesi_n">Ya te registraste? Inicia sesión</string>
+    <string name="numero_telef_nico">Numero telefónico</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="Birthdate">Fecha de nacimiento</string>
+    <string name="nombre">Nombre</string>
+    <string name="ejemplo_gmail_com">ejemplo@gmail.com</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="acceder">Acceder</string>
+    <string name="no_te_has_registrado_registrate">No te has registrado? Registrate</string>
+    <string name="olvidaste_tu_contrase_a">Olvidaste tu contraseña?</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="cerrar_sesi_n">Cerrar Sesión</string>
+    <string name="tu_nombre">Nombre completo</string>
+    <string name="tu_correo">Correo electrónico</string>
+    <string name="tu_fecha_de_nacimiento">Fecha de nacimiento</string>
+    <string name="tu_n_mero_telef_nico">Número telefónico</string>
+    <string name="ingrese_su_nombre_completo">Ingrese su nombre completo</string>
+    <string name="Ingrese_su_correo">ingrese_su_correo</string>
+    <string name="ingrese_su_fecha_de_nacimiento">Ingrese su fecha de nacimiento</string>
+    <string name="ingrese_su_numero_telefonico">Ingrese su numero telefonico</string>
+    <string name="manuales_de_configuraci_n">Manuales de Configuración</string>
+    <string name="title_activity_manual1">Manual1</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+
+
+    <string name="Hughesnet">Instalación\nHughesNet</string>
+    <string name="Hughesnet1">Proceso\nReinstall</string>
+    <string name="Hughesnet2">Test de\nVelocidad</string>
+    <string name="Radio">Configuración\nRadio BTS/CD</string>
+    <string name="Access_Point">Configuración\nAccess Points</string>
+    <string name="UPSK">Configuración\nUPS K-STAR</string>
+    <string name="UPSE">Configuración\nUPS EATON</string>
+    <string name="UPSP">Configuración\nUPS POWERSUN</string>
+    <string name="UPSL">Configuración\nUPS LOXUS</string>
+    <string name="action_more" />
+    <string name="title_activity_detalles_dates">detallesDates</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_add_crono">addCrono</string>
+    <string name="fecha_actividad">Fecha actividad</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="an_lisis_resultados">Análisis resultados</string>
+    <string name="title_activity_add_foro_p">addForoP</string>
+    <string name="title_activity_detalles_foro">detallesForo</string>
+    <string name="title_activity_edit_foro_p">editForoP</string>
+</resources>
