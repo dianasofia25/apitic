@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.apitic.ui.inicio.Inicio"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_inicio" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_instructivos"
+        android:name="com.example.apitic.ui.manuales.ManualesFragment"
+        android:label="@string/menu_instruc"
+        tools:layout="@layout/fragment_manuales" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_cronograma"
+        android:name="com.example.apitic.ui.cronograma.CronogramaFragment"
+        android:label="@string/menu_insta"
+        tools:layout="@layout/fragment_cronograma" />
+
+    <fragment
+        android:id="@+id/nav_analisis"
+        android:name="com.example.apitic.ui.resultados.ResultadosFragment"
+        android:label="Analisis Resultados"
+        tools:layout="@layout/fragment_resultados"/>
+
+    <fragment
+        android:id="@+id/nav_foro"
+        android:name="com.example.apitic.ui.foro.ForoFragment"
+        android:label="Foro"
+        tools:layout="@layout/fragment_resultados"/>
+
+    <activity
+        android:id="@+id/M1"
+        android:name="com.example.apitic.ui.manuales.ManualHughesnet"
+        tools:layout="@layout/activity_manualhughesnet"/>
+
+</navigation>
